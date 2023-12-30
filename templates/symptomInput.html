@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sympto</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        font-family: 'Poppins', sans-serif;
+        background-color: #FAFAFA;
+    }
+    #wave{
+        position: absolute;
+        z-index: -99;
+    }
+    #logo{
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        padding: 6vh;
+    }
+
+    .symptoms-inp input{
+        border: 2px solid #FF695E;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 80%;
+        padding: 5px
+    }
+    
+
+  .submit-btn{
+        background-color: #FF695E;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 10vw;
+    
+  }
+  .home_main{
+    background-color: white;
+    width: 30vw;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .doc_image{
+    width: 40vw;
+    margin-top: -50px;
+  }
+  .symptoms-list{
+    background-color: #F8F7F7;
+    height: 300px;
+    
+  }
+  .symptoms-list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    overflow-y: scroll;
+  }
+  .symptoms-list ul li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .symptoms-list h3{
+    padding-top: 10px;
+  }
+
+  #suggested{
+    background-color: #ffffff;
+    position: absolute;
+    width: 24vw;
+    margin: 0px 3vw;
+    
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1); /* 7px down, 7px right, 10px blur, and color */
+  }
+  #suggested ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+  #suggested ul:hover{
+    cursor: pointer;
+  }
+</style>
+<body>
+    <nav>
+    <svg width="100%" height="25vh" preserveAspectRatio="none" id="wave" style="transform:rotate(180deg); transform: scale(1, -1); transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(221.218, 71.41, 23.296, 1)" offset="0%"></stop><stop stop-color="rgba(255, 80.852, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,75L26.7,79.2C53.3,83,107,92,160,79.2C213.3,67,267,33,320,20.8C373.3,8,427,17,480,41.7C533.3,67,587,108,640,129.2C693.3,150,747,150,800,141.7C853.3,133,907,117,960,112.5C1013.3,108,1067,117,1120,116.7C1173.3,117,1227,108,1280,116.7C1333.3,125,1387,150,1440,170.8C1493.3,192,1547,208,1600,183.3C1653.3,158,1707,92,1760,58.3C1813.3,25,1867,25,1920,37.5C1973.3,50,2027,75,2080,79.2C2133.3,83,2187,67,2240,62.5C2293.3,58,2347,67,2400,66.7C2453.3,67,2507,58,2560,45.8C2613.3,33,2667,17,2720,25C2773.3,33,2827,67,2880,70.8C2933.3,75,2987,50,3040,37.5C3093.3,25,3147,25,3200,45.8C3253.3,67,3307,108,3360,104.2C3413.3,100,3467,50,3520,41.7C3573.3,33,3627,67,3680,83.3C3733.3,100,3787,100,3813,100L3840,100L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(237.156, 74.527, 22.296, 1)" offset="0%"></stop><stop stop-color="rgba(168.852, 65.5, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,175L26.7,154.2C53.3,133,107,92,160,75C213.3,58,267,67,320,62.5C373.3,58,427,42,480,58.3C533.3,75,587,125,640,154.2C693.3,183,747,192,800,162.5C853.3,133,907,67,960,62.5C1013.3,58,1067,117,1120,116.7C1173.3,117,1227,58,1280,50C1333.3,42,1387,83,1440,104.2C1493.3,125,1547,125,1600,104.2C1653.3,83,1707,42,1760,20.8C1813.3,0,1867,0,1920,12.5C1973.3,25,2027,50,2080,62.5C2133.3,75,2187,75,2240,62.5C2293.3,50,2347,25,2400,20.8C2453.3,17,2507,33,2560,70.8C2613.3,108,2667,167,2720,195.8C2773.3,225,2827,225,2880,195.8C2933.3,167,2987,108,3040,91.7C3093.3,75,3147,100,3200,116.7C3253.3,133,3307,142,3360,145.8C3413.3,150,3467,150,3520,141.7C3573.3,133,3627,117,3680,104.2C3733.3,92,3787,83,3813,79.2L3840,75L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path></svg>
+    <h1 id="logo">Sympto</h1>
+    </nav>
+    <div class="row">
+        <div class="home_main">
+            <h2 style="color: #FF695E">User Symptoms</h2>
+            
+            <form method="post" id="symptomsForm">
+                <div class="symptoms-inp">
+                <h3>Symptoms Input</h3>
+                <input type="text" name="symptoms" id="symptomsInput" autocomplete="off" oninput="filterSuggestions()">
+                </div>
+
+                <div id="suggested">
+                  <ul id="suggestions">
+                    <li></li>
+                </div>
+
+                <div class="symptoms-list">
+                  <h3>Entered Symptoms</h3>
+                  <ul id="itemList">
+                    <li></li>
+                  </ul>
+                </div>
+                <br>
+                <button type="submit" class="submit-btn">Next 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="doc_image">
+            <img src="static/img/doc.png" width="100%">
+        </div>
+    </div>
+
+
+
+<script>
+  var symptom_list = ['itching', 'skin_rash', 'nodal_skin_eruptions', 'continuous_sneezing', 'shivering', 'chills', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'lethargy', 'patches_in_throat', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'nausea', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'fluid_overload', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'sinus_pressure', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'pain_in_anal_region', 'bloody_stool', 'irritation_in_anus', 'neck_pain', 'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'extra_marital_contacts', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 'movement_stiffness', 'spinning_movements', 'loss_of_balance', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic _patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'receiving_blood_transfusion', 'receiving_unsterile_injections', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'history_of_alcohol_consumption', 'fluid_overload.1', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'pus_filled_pimples', 'blackheads', 'scurring', 'skin_peeling', 'silver_like_dusting', 'small_dents_in_nails', 'inflammatory_nails', 'blister', 'red_sore_around_nose', 'yellow_crust_ooze', 'prognosis'];
+    function filterSuggestions() {
+        var symptomsInput = document.getElementById('symptomsInput');
+        var suggestionsList = document.getElementById('suggestions');
+        suggestionsList.innerHTML = '';  // Clear previous suggestions
+
+        // Filter allowed values based on user input
+        var filteredValues = symptom_list.filter(function (value) {
+            return value.toLowerCase().includes(symptomsInput.value.toLowerCase());
+        });
+
+        // Display filtered suggestions
+        filteredValues.forEach(function (value) {
+            var listItem = document.createElement('li');
+            listItem.textContent = value;
+            listItem.onclick = function () {
+                addToSelectedItems(value);
+            };
+            suggestionsList.appendChild(listItem);
+        });
+    }
+
+    function addToSelectedItems(value) {
+    var selectedItemsList = document.getElementById('itemList');
+
+    // Check if the value is already in the list
+    if (!isSymptomAlreadySelected(value)) {
+        var listItem = document.createElement('li');
+        listItem.textContent = value;
+        selectedItemsList.appendChild(listItem);
+
+        // Clear the input field after selecting an item
+        document.getElementById('symptomsInput').value = '';
+
+        // Update the string (comma-separated values)
+        updateString();
+    } else {
+        alert('Symptom already selected.');
+    }
+  document.getElementById('suggestions').style.display="none";
+  }
+
+
+  function isSymptomAlreadySelected(value) {
+    var selectedItemsList = document.getElementById('itemList');
+    var items = selectedItemsList.getElementsByTagName('li');
+
+    // Check if the value is already in the list
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].textContent.toLowerCase() === value.toLowerCase()) {
+            return true; // Symptom already selected
+        }
+    }
+
+    return false; // Symptom not selected
+  }
+
+    function updateString() {
+        var selectedItemsList = document.getElementById('itemList');
+        var items = selectedItemsList.getElementsByTagName('li');
+        var selectedValues = [];
+
+        // Extract selected values
+        for (var i = 0; i < items.length; i++) {
+            selectedValues.push(items[i].textContent);
+        }
+
+        // Join the selected values into a comma-separated string
+        var selectedString = selectedValues.join(', ');
+
+        // Display the resulting string (you can use it when the user submits)
+        console.log(selectedString);
+    }
+
+
+  function showSuggestions() {
+  document.getElementById('suggested').style.display="block";
+  document.getElementById('suggestions').style.display="block";
+  }
+
+  document.getElementById('symptomsInput').addEventListener('input', showSuggestions);
+  </script>
+</body>
+</html>
