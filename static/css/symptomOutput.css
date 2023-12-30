@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+}
+#wave{
+    position: absolute;
+    z-index: -99;
+}
+#logo{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 6vh;
+}
+
+.symptoms-inp input{
+    border: 2px solid #FF695E;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 80%;
+    padding: 5px
+}
+
+
+.submit-btn{
+    background-color: #FF695E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0vh 10vw;
+
+}
+.home_main{
+background-color: white;
+width: 30vw;
+padding: 30px;
+text-align: center;
+border-radius: 15px;
+}
+.doc_image{
+width: 40vw;
+margin-top: -50px;
+}
+
+.pred{
+border: 2px solid #FF695E;
+border-radius: 10px;
+margin-bottom: 20px;;
+}
+
+
+.details{
+background-color: white;
+width: 40vw;
+padding: 20px;
+}
+
+.details h3{
+text-align: center;
+}
