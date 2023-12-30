@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+}
+
+#wave {
+    position: absolute;
+    z-index: -99;
+}
+
+#logo {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 6vh;
+}
+
+.age input {
+    border: 2px solid #FF695E;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    padding: 5px;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-group label {
+    font-size: 20px;
+    color: #FF695E;
+    margin-right: 10px;
+}
+
+.radio-button {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-button label {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #FF695E;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.radio-button input[type="radio"]:checked + label {
+    background-color: #FF695E;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #FF695E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 10vw;
+    margin-top: -50px;
+}
+
+.home_main {
+    background-color: white;
+    width: 30vw;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.doc_image {
+    width: 40vw;
+    margin-top: -50px;
+}
