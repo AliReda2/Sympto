@@ -1,14 +1,14 @@
 # Sympto
 
 ## Description
-Sympto is a web application designed to predict diseases based on symptoms input by the user. It utilizes a machine learning model trained on a dataset of diseases and symptoms to provide predictions.
-
-## System Architecture
-![health (2)](https://github.com/ayushi0111/Sympto/assets/121400296/a7d1fff0-5eaf-4778-be46-0ee38b825c9a)
+Sympto is a web application designed to predict diseases based on symptoms input by the user. It utilizes a machine learning model trained on a dataset of diseases and symptoms to provide predictions. This predictive tool offers early insights, fostering informed health decisions by combining user symptoms with a vast knowledge base to deliver accurate and personalized disease predictions.
 
 ## Features
 - Disease prediction based on user-input symptoms
 - User-friendly web interface
+
+## System Architecture
+![health (2)](https://github.com/ayushi0111/Sympto/assets/121400296/a7d1fff0-5eaf-4778-be46-0ee38b825c9a)
 
 ## Installation
 To set up the Sympto application on your local machine, follow these steps:
