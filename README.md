@@ -1,5 +1,5 @@
 <h1 align="center"> Sympto </h1>
- > ***"Make your health a priority."***
+  ***"Make your health a priority."***
 
 ## Description
 Sympto is a web application designed to predict diseases based on symptoms input by the user. It utilizes a machine learning model trained on a dataset of diseases and symptoms to provide predictions. This predictive tool offers early insights, fostering informed health decisions by combining user symptoms with a vast knowledge base to deliver accurate and personalized disease predictions.
