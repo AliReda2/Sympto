@@ -25,17 +25,12 @@ def index():
     if request.method == 'POST':
         age = request.form['age']
         sex = request.form['sex']
-
-        # Vercel has a Read-Only Filesystem, so we can't write to the file currently hosted
-        # on Vercel. Uncomment the following code to write to a local file
-        """
         with open(data_file_path, mode='a', newline='') as csvfile:
             fieldnames = ['Age', 'Sex']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             if csvfile.tell() == 0:
                 writer.writeheader()
             writer.writerow({'Age': age, 'Sex': sex})
-        """
         return redirect(url_for('predict'))
     return render_template('ind.html')
 
@@ -61,7 +56,7 @@ def predict():
         top_classes = np.argsort(probabilities[0])[::-1][:top_n]  # Indices of the top N classes
         top_class_names = label_encoder.inverse_transform(top_classes)  # Convert indices back to class names
         top_probabilities = probabilities[0, top_classes]  # Probabilities of the top N classes
-        top_probabilities = [f"{int(i*100)} %" for i in top_probabilities]
+        top_probabilities = [f"{int(i*100)}" for i in top_probabilities]
         possiblities = zip(top_class_names, top_probabilities)
 
         pred_info = []
