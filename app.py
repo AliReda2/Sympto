@@ -63,7 +63,7 @@ def predict():
         for i in top_class_names:
             pred_info.append(disease_info[i.strip()])
     
-        return render_template('symptomOutput.html', prediction=possiblities, info = pred_info)
+        return render_template('symptomOutput.html', prediction=list(possiblities), info = pred_info)
     
     return render_template('symptomInput.html')
         
