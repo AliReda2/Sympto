@@ -41,6 +41,3 @@ Sympto is released under the MIT License. See the LICENSE file for more details.
 - [Pranav Tyagi](https://github.com/PranavTyagi-3)
 - [Ayushi Agarwal](https://github.com/ayushi0111)
 - [Ayush Bhatt](https://github.com/AyushB21)
-
-## Contact Information
-For any questions or concerns, please open an issue in the GitHub repository or contact the maintainers directly.
