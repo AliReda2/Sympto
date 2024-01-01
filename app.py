@@ -44,7 +44,9 @@ def predict():
         top_classes = np.argsort(probabilities[0])[::-1][:top_n]  # Indices of the top N classes
         top_class_names = label_encoder.inverse_transform(top_classes)  # Convert indices back to class names
         top_probabilities = probabilities[0, top_classes]  # Probabilities of the top N classes
+        top_probabilities = [f"{int(i*100)} %" for i in top_probabilities]
         possiblities = zip(top_class_names, top_probabilities)
+
         pred_info = []
         for i in top_class_names:
             pred_info.append(disease_info[i.strip()])
