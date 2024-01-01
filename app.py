@@ -25,12 +25,17 @@ def index():
     if request.method == 'POST':
         age = request.form['age']
         sex = request.form['sex']
+
+        # Vercel has a Read-Only Filesystem, so we can't write to the file currently hosted
+        # on Vercel. Uncomment the following code to write to a local file
+        """
         with open(data_file_path, mode='a', newline='') as csvfile:
             fieldnames = ['Age', 'Sex']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             if csvfile.tell() == 0:
                 writer.writeheader()
             writer.writerow({'Age': age, 'Sex': sex})
+        """
         return redirect(url_for('predict'))
     return render_template('ind.html')
 
