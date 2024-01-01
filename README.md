@@ -23,14 +23,12 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## Usage
-After installation, navigate to `http://localhost:5000` in your web browser to start using the Sympto application.
+## Protocols
+Usage: After installation, navigate to `http://localhost:5000` in your web browser to start using the Sympto application.
 
-## How to Contribute
-Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
+Hpw to Contribute: Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-## License
-Sympto is released under the MIT License. See the LICENSE file for more details.
+License: Sympto is released under the MIT License. See the LICENSE file for more details.
 
 ## Contributions
 - [Pranav Tyagi](https://github.com/PranavTyagi-3)
