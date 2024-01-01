@@ -30,10 +30,10 @@
         <div class="home_main">
             <h2 style="color: #FF695E">User Information</h2>
             
-            <form action="{{ url_for('predict') }}" method="get">
+            <form action="/" method="POST">
                 <div class="age">
                 <h3>Age</h3>
-                <input type="number" required>
+                <input type="number" name="age" required>
                 </div>
 
                 <div class="gender">

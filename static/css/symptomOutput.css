@@ -17,6 +17,10 @@ body{
     padding: 6vh;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 .symptoms-inp input{
     border: 2px solid #FF695E;
     border-radius: 10px;

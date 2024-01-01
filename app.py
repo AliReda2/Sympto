@@ -4,6 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pickle
 import json
+import csv
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ symptom_list = ['Itching', 'Skin Rash', 'Nodal Skin Eruptions', 'Continuous Snee
 loaded_model = pickle.load(open('trained_model.sav','rb'))
 label_encoder = pickle.load(open('label_encoder_target.sav','rb'))
 
+data_file_path = 'data.csv'
 file_path = 'disease_data.json'
 
 # Open the file and load its content
@@ -18,8 +20,18 @@ with open(file_path, 'r') as file:
     disease_info = json.load(file)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
+    if request.method == 'POST':
+        age = request.form['age']
+        sex = request.form['sex']
+        with open(data_file_path, mode='a', newline='') as csvfile:
+            fieldnames = ['Age', 'Sex']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            if csvfile.tell() == 0:
+                writer.writeheader()
+            writer.writerow({'Age': age, 'Sex': sex})
+        return render_template('symptomInput.html')
     return render_template('ind.html')
 
 @app.route('/predict', methods=['GET', 'POST'])
