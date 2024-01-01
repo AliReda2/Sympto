@@ -1,4 +1,4 @@
-# Sympto
+<h1 align="center"> Sympto </h1>
  > ***"Make your health a priority."***
 
 ## Description
