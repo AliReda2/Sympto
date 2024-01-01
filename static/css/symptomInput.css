@@ -74,21 +74,24 @@ border-bottom: 1px solid #ccc;
 padding-top: 10px;
 }
 
-#suggested{
-background-color: #ffffff;
-position: absolute;
-width: 24vw;
-margin: 0px 3vw;
+#suggested {
+    display: none; 
+}
 
-box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1); /* 7px down, 7px right, 10px blur, and color */
+#suggested ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: scroll;
+    border-top: 1px solid #ccc; 
 }
-#suggested ul{
-list-style: none;
-padding: 0;
-margin: 0;
-max-height: 250px;
-overflow-y: scroll;
+
+#suggested ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
-#suggested ul:hover{
-cursor: pointer;
+
+#suggested ul li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
 }
