@@ -62,7 +62,8 @@ margin-top: -50px;
 .pred{
 border: 2px solid #FF695E;
 border-radius: 10px;
-margin-bottom: 20px;;
+margin-bottom: 20px;
+cursor: pointer;
 }
 
 
@@ -74,4 +75,13 @@ padding: 20px;
 
 .details h3{
 text-align: center;
+}
+
+.details div.show {
+    display: block;
+}
+
+.details div {
+    display: none;
+
 }
