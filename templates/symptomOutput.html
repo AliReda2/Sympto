@@ -76,7 +76,7 @@
             contentType: 'application/json',
             success: function (result) {
                 // Append the quote to the quoteContainer div
-                $('#quoteContainer').html('<p>' + result[0].quote + '</p>');
+                $('#quoteContainer').html('<p>' + '"' + result[0].quote + '"' + '</p>');
             },
             error: function ajaxError(jqXHR) {
                 console.error('Error: ', jqXHR.responseText);
