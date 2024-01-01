@@ -73,9 +73,14 @@ border-bottom: 1px solid #ccc;
 .symptoms-list h3{
 padding-top: 10px;
 }
-
 #suggested {
-    display: none; 
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    width: 24vw;
+    margin: 0px 3vw;
+    
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
 #suggested ul {
@@ -95,3 +100,6 @@ padding-top: 10px;
 #suggested ul li:not(:last-child) {
     border-bottom: 1px solid #ccc;
 }
+#suggested ul:hover{
+    cursor: pointer;
+  }
