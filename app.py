@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, redirect
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
@@ -31,7 +31,7 @@ def index():
             if csvfile.tell() == 0:
                 writer.writeheader()
             writer.writerow({'Age': age, 'Sex': sex})
-        return render_template('symptomInput.html')
+        return redirect(url_for('predict'))
     return render_template('ind.html')
 
 @app.route('/predict', methods=['GET', 'POST'])
