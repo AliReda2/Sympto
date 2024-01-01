@@ -1,4 +1,4 @@
-<h1 align="center"> Sympto </h1>
+# Sympto
   ***"Make your health a priority."***
 
 ## Description
@@ -10,6 +10,10 @@ Sympto is a web application designed to predict diseases based on symptoms input
 
 ## System Architecture
 ![health (2)](https://github.com/ayushi0111/Sympto/assets/121400296/a7d1fff0-5eaf-4778-be46-0ee38b825c9a)
+
+## Dependencies
+- Python 3.x
+- Any other specific libraries or tools
 
 ## Installation
 To set up the Sympto application on your local machine, follow these steps:
