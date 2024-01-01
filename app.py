@@ -15,7 +15,6 @@ label_encoder = pickle.load(open('label_encoder_target.sav','rb'))
 data_file_path = 'tmp/data.csv'
 file_path = 'disease_data.json'
 
-# Open the file and load its content
 with open(file_path, 'r') as file:
     disease_info = json.load(file)
 
