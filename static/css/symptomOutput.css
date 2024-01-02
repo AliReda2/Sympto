@@ -59,13 +59,18 @@ width: 40vw;
 margin-top: -50px;
 }
 
-.pred{
-border: 2px solid #FF695E;
-border-radius: 10px;
-margin-bottom: 20px;
-cursor: pointer;
+.pred {
+  border: 2px solid #FF695E;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 
+.pred:hover {
+  background-color: #FF695E; /* Change the background color on hover */
+  color: #ffffff;
+}
 
 .details{
 background-color: white;
