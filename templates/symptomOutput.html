@@ -38,7 +38,7 @@
             
             <div class="predictions">
               {% for i in range(5) %}
-              <div class="pred" onclick="toggleInfo({{ i }})">
+              <div class="pred" id="pred{{ i }}" onclick="toggleInfo({{ i }})">
                 <h3>{{ prediction[i][0] }}</h3>
                 <p style="display: flex;justify-content: center;align-items: center;"><progress value="{{ prediction[i][1] }}" max="100" style="--value: {{ prediction[i][1] }}; --max: 100;"></progress></p>
               </div>
