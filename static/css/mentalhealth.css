@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+}
+#wave{
+    position: absolute;
+    z-index: -99;
+}
+#logo{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 6vh;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.symptoms-inp input{
+    height: 300px;
+    overflow-y: scroll;
+    border: 2px solid #FF695E;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 80%;
+    padding: 5px
+}
+
+
+.submit-btn{
+    background-color: #FF695E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0vh 10vw;
+
+}
+.home_main{
+background-color: white;
+width: 30vw;
+padding: 30px;
+text-align: center;
+border-radius: 15px;
+}
+.doc_image{
+width: 40vw;
+margin-top: -50px;
+}
+.symptoms-list{
+background-color: #F8F7F7;
+height: 300px;
+
+}
+.symptoms-list ul{
+list-style: none;
+padding: 0;
+margin: 0;
+height: 250px;
+overflow-y: scroll;
+}
+.symptoms-list ul li{
+padding: 10px;
+border-bottom: 1px solid #ccc;
+}
+.symptoms-list h3{
+padding-top: 10px;
+}
+#suggested {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    width: 24vw;
+    margin: 0px 3vw;
+    
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+#suggested ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: scroll;
+    border-top: 1px solid #ccc; 
+}
+
+#suggested ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#suggested ul li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+#suggested ul:hover{
+    cursor: pointer;
+  }
