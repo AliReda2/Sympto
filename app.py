@@ -106,13 +106,13 @@ def mental():
         input['text']=input['text'].apply(lambda x : ' '.join([index for index in x]))
         X_valid=vectorizer.transform(input['text'])
         stress_output=mental_model.predict(X_valid)
-        stress_probab = mental_model.predict_proba(X_valid)[1]
+        stress_probab = mental_model.predict_proba(X_valid)[0][1]
         if stress_output==0:
             stress_output='Not Stress'
         else:
             stress_output='Stress'
         
-        print(stress_output)
+        return render_template('mentalhealthoutput.html', output=stress_output)
 
     return render_template('mentalhealth.html')        
 
