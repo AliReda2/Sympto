@@ -33,7 +33,7 @@
             <form method="post" id="symptomsForm">
                 <div class="symptoms-inp">
                 <h3>How are you feeling Today?</h3>
-                <input type="text" name="symptoms" id="symptomsInput">
+                <textarea name="feelings" id="symptomsInput" placeholder="Type what are you feeling ??"></textarea>
                 </div>
                 <br>
                 <button type="submit" class="submit-btn">Next 
@@ -45,9 +45,9 @@
         </div>
 
         <div class="doc_image">
-            <img src="../static/img/doc.png" width="100%">
+            <a href="{{ url_for('predict') }}"><img src="../static/img/doc1.png" width="100%"></a>
         </div>
     </div>
-    <script src="../static/Js/symptomInput.js"></script>
+    
 </body>
 </html>
