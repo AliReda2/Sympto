@@ -93,7 +93,7 @@ def predict():
         return render_template('symptomOutput.html', prediction=list(possiblities), info = pred_info)
     
     return render_template('symptomInput.html')
-"""
+    
 @app.route('/mental', methods=['GET', 'POST'])
 def mental():
     if request.method == "POST":
@@ -116,7 +116,6 @@ def mental():
         return render_template('mentalhealthoutput.html', output=stress_output)
 
     return render_template('mentalhealth.html')        
-"""
 @app.route('/output')
 def predictions():
     return render_template('symptomOutput.html')
