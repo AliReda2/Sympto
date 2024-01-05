@@ -36,7 +36,7 @@ file_path = 'Model_Files/disease_data.json'
 
 with open(file_path, 'r') as file:
     disease_info = json.load(file)
-
+"""
 def remove_stopwords(text):
     stpw=set(stopwords.words('english'))
     filtered_text=[word for word in text if word not in stpw]
@@ -46,7 +46,7 @@ def lemmatize_words(text):
     lemmer=WordNetLemmatizer()
     lemmatized_text=[lemmer.lemmatize(word,pos='v') for word in text]
     return lemmatized_text
-
+"""
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
