@@ -7,6 +7,9 @@ Sympto is a web application designed to predict diseases based on symptoms input
 ## Features
 - Disease prediction based on user-input symptoms
 - User-friendly web interface
+  
+## Mental Health Feature
+Sympto now includes a mental health assessment feature, allowing users to not only check for physical ailments but also to evaluate their mental well-being. This feature aims to raise awareness and provide support for mental health issues, making it easier for users to seek help and guidance.
 
 ## System Architecture
 ![health (2)](https://github.com/ayushi0111/Sympto/assets/121400296/a7d1fff0-5eaf-4778-be46-0ee38b825c9a)
