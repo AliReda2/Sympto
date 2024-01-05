@@ -48,6 +48,10 @@
             <a href="{{ url_for('predict') }}"><img src="../static/img/doc1.png" width="100%"></a>
         </div>
     </div>
-    
+    {% if msg %}
+    <script>
+        alert("This features require paid hosting on Vercel that is why you are seeing this message box. Running on the local machine will not raise any issues and it will be able to predict whether stressed or not");
+    </script>
+    {% endif %}
 </body>
 </html>
