@@ -9,8 +9,8 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pickle
 import json
-import pandas as pd
 """
+import pandas as pd
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
