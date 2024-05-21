@@ -28,7 +28,7 @@ symptom_list = ['Itching', 'Skin Rash', 'Nodal Skin Eruptions', 'Continuous Snee
 sympto_model = pickle.load(open('Model_Files/trained_model.sav','rb'))
 label_encoder = pickle.load(open('Model_Files/label_encoder_target.sav','rb'))
 
-vectorizer = pickle.load(open('Model_Files/Vectorizer.sav','rb'))
+# vectorizer = pickle.load(open('Model_Files/Vectorizer.sav','rb'))
 
 data_file_path = 'Model_Files/data.csv'
 file_path = 'Model_Files/disease_data.json'
