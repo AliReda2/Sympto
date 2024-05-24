@@ -6,19 +6,6 @@ body {
     background-color: #FAFAFA;
 }
 
-#wave {
-    position: absolute;
-    z-index: -99;
-}
-
-#logo {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    padding: 6vh;
-}
-
 .age input {
     border: 2px solid #FF695E;
     border-radius: 10px;
@@ -55,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-.radio-button input[type="radio"]:checked + label {
+.radio-button input[type="radio"]:checked+label {
     background-color: #FF695E;
     color: #fff;
 }
@@ -72,7 +59,7 @@ body {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0vh 10vw;
     margin-top: -50px;
@@ -84,9 +71,4 @@ body {
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-}
-
-.doc_image {
-    width: 40vw;
-    margin-top: -50px;
 }
